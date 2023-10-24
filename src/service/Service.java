@@ -13,8 +13,8 @@ public class Service {
         this.repo = r;
     }
 
-    public void addDoctor(String name, String specialty, String location, double grade) {
-        Doctor d = new Doctor(name, specialty, location, grade);
+    public void addDoctor(Integer id, String name, String specialty, String location, double grade) {
+        Doctor d = new Doctor(id, name, specialty, location, grade);
         this.repo.addDoctor(d);
     }
 
