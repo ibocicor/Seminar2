@@ -2,12 +2,14 @@ package src.domain;
 
 import java.util.Objects;
 
-public class Doctor {
+public class Doctor implements Identifiable<Integer>{
+    Integer id;
     private String name, specialty, location;
     double grade;
 
-    public Doctor(String name, String specialty, String location, double grade)
+    public Doctor(Integer id, String name, String specialty, String location, double grade)
     {
+        this.id = id;
         this.name = name;
         this.specialty = specialty;
         this.location = location;
@@ -16,8 +18,8 @@ public class Doctor {
 
     @Override
     public String toString() {
-        return "Doctor{" +
-                "name='" + name + '\'' +
+        return "Doctor{id=" + id +
+                ", name='" + name + '\'' +
                 ", specialty='" + specialty + '\'' +
                 ", location='" + location + '\'' +
                 ", grade=" + grade +
@@ -32,9 +34,18 @@ public class Doctor {
         if (o.getClass() != Doctor.class)
             return false;
         Doctor d = (Doctor)o;
-        if (this.name.equals(d.name) && this.specialty.equals(d.specialty) &&
-            this.location.equals(d.location) && this.grade == d.grade)
+        if (d.id == this.id)
             return true;
         return false;
+    }
+
+    @Override
+    public Integer getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(Integer id) {
+        this.id = id;
     }
 }
