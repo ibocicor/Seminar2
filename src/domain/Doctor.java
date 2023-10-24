@@ -26,6 +26,14 @@ public class Doctor implements Identifiable<Integer>{
                 '}';
     }
 
+    public String getSpecialty() {
+        return specialty;
+    }
+
+    public double getGrade() {
+        return grade;
+    }
+
     @Override
     public boolean equals(Object o)
     {
