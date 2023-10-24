@@ -27,6 +27,6 @@ public class Main {
 
     class B extends A
     {
-        @Override
-        public void fct2() {}
+//        @Override
+//        public void fct2() {}
     }
