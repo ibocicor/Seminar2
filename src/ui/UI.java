@@ -1,6 +1,6 @@
-package ui;
-import domain.Doctor;
-import service.Service;
+package src.ui;
+import src.domain.Doctor;
+import src.service.Service;
 
 import java.util.Scanner;
 

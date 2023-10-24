@@ -1,7 +1,9 @@
-import domain.Doctor;
-import repository.Repository;
-import service.Service;
-import ui.UI;
+package src;
+
+import src.domain.Doctor;
+import src.repository.Repository;
+import src.service.Service;
+import src.ui.UI;
 
 import java.util.ArrayList;
 
@@ -18,15 +20,4 @@ public class Main {
             UI ui = new UI(serv);
             ui.run();
         }
-    }
-
-    class A
-    {
-        public void fct() {}
-    }
-
-    class B extends A
-    {
-//        @Override
-//        public void fct2() {}
     }

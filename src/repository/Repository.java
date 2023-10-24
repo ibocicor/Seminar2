@@ -1,5 +1,5 @@
-package repository;
-import domain.Doctor;
+package src.repository;
+import src.domain.Doctor;
 import java.util.ArrayList;
 
 public class Repository {

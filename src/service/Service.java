@@ -1,7 +1,7 @@
-package service;
+package src.service;
 
-import domain.Doctor;
-import repository.Repository;
+import src.domain.Doctor;
+import src.repository.Repository;
 
 import javax.print.Doc;
 import java.util.ArrayList;
