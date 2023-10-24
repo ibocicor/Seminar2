@@ -2,6 +2,7 @@ package src;
 
 import src.domain.Doctor;
 import src.domain.Patient;
+import src.repository.DoctorRepo;
 import src.repository.Repository;
 import src.service.Service;
 import src.ui.UI;
@@ -17,13 +18,13 @@ public class Main {
             Patient p2 = new Patient("abcd", "Anna", 123);
 
 
-            /*Repository repo = new Repository();
+            DoctorRepo repo = new DoctorRepo();
             Service serv = new Service(repo);
-            serv.addDoctor("John Smith", "cardiology", "Cluj", 9.6);
-            serv.addDoctor("Anna Smith", "ortopedy", "Cluj", 9.7);
+            serv.addDoctor(1223, "John Smith", "cardiology", "Cluj", 9.6);
+            serv.addDoctor(5672, "Anna Smith", "ortopedy", "Cluj", 9.7);
 
             UI ui = new UI(serv);
-            ui.run();*/
+            ui.run();
             System.out.println(p1.equals(p2));
 
         }

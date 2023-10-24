@@ -2,6 +2,8 @@ package src.repository;
 
 import src.domain.Identifiable;
 
+import java.util.Collection;
+
 public interface IRepository<T extends Identifiable, U > {
 
     public void addItem(T item);
@@ -10,5 +12,5 @@ public interface IRepository<T extends Identifiable, U > {
 
     public T findItem(U id);
 
-    //public getALlItems()
+    public Iterable<T> getALlItems();
 }
